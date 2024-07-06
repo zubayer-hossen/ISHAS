@@ -1,0 +1,138 @@
+.president-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: url(https://i.ibb.co/tmPyzQN/president1.jpg) no-repeat center
+    center/cover;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  width: 80%;
+  margin: 20px auto;
+  margin-bottom: 100px;
+  animation: fadeIn 1s ease-in-out;
+  overflow-x: hidden;
+}
+
+.president-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #4caf50;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.president-pic:hover {
+  transform: scale(1.1);
+}
+
+.info-content {
+  text-align: center;
+}
+
+.info-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info-content p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.speech {
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-in-out;
+}
+
+.speech h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: pink;
+}
+
+.speech p {
+  font-size: 16px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .left,
+  .main,
+  .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  .president-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #4caf50;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left,
+  .main,
+  .right {
+    /* Adjusting widths for smaller screens */
+    width: 100%; /* Make them stack vertically */
+    padding: 10px; /* Optional: Add padding for better spacing */
+  }
+
+  .president-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #4caf50;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .left,
+  .main,
+  .right {
+    /* Further adjustments for very small screens */
+    font-size: 14px; /* Example: Decrease font size */
+    padding: 5px; /* Optional: Further reduce padding */
+  }
+
+  .president-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #4caf50;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+}

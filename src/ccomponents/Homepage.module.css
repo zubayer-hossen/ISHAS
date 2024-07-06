@@ -1,0 +1,158 @@
+.homepage {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.breakingNews {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.newsText {
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.bannerSlider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.bannerSlider img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.nationalSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.nationalAnthem,
+.noticeBoard {
+  width: 48%;
+  text-align: center;
+}
+
+.nationalAnthem h2,
+.noticeBoard h2 {
+  margin-bottom: 10px;
+}
+
+.notice > li {
+  background-color: transparent;
+}
+.aboutUs,
+.upcomingEvents,
+.contactUs {
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 1.5em;
+
+  border: 1px solid red;
+
+  color: #fd0505;
+  padding-bottom: 5px;
+  background-color: rgb(228, 248, 8);
+  border-radius: 5px;
+  text-align: center;
+}
+
+p,
+ul {
+  font-size: 1em;
+  color: #666;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.listItem {
+  background: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .homepage {
+    padding: 10px;
+  }
+
+  .newsText {
+    font-size: 1em;
+  }
+
+  .bannerSlider img {
+    height: 250px;
+  }
+
+  .nationalSection {
+    flex-direction: column;
+  }
+
+  .nationalAnthem,
+  .noticeBoard {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .nationalAnthem iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    border: 1px solid red;
+
+    color: #fd0505;
+    padding-bottom: 5px;
+    background-color: rgb(228, 248, 8);
+    border-radius: 5px;
+  }
+
+  p,
+  ul {
+    font-size: 0.9em;
+  }
+
+  .listItem {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsText {
+    font-size: 0.9em;
+  }
+
+  .bannerSlider img {
+    height: 100px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p,
+  ul {
+    font-size: 0.8em;
+  }
+
+  .listItem {
+    padding: 5px;
+  }
+}
